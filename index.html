@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Project</title>
+  </head>
+  <body>
+    <!-- Head Section -->
+    <header>
+      <div class="header_flex_container">
+        <nav class="header_structure">
+          <!-- Mobile Components -->
+          <ul class="mobile_sidebar hide" id="mobile_sidebar">
+            <li class="">
+              <a href="#"
+                >Products<span class="mobile_sidebar_span"
+                  ><img src="images/icon-arrow-dark.svg" /></span
+              ></a>
+            </li>
+            <li class="">
+              <a href="#"
+                >Company<span class="mobile_sidebar_span"
+                  ><img src="images/icon-arrow-dark.svg" /></span
+              ></a>
+            </li>
+            <li class="connect_container" id="connect_container">
+              <a href="#"
+                >Connect<button
+                  onclick="showConnect()"
+                  class="mobile_sidebar_span"
+                  id="down"
+                >
+                  <img src="images/icon-arrow-dark.svg" /></button
+                ><button
+                  onclick="showConnect()"
+                  class="hide mobile_sidebar_span"
+                  id="up"
+                >
+                  <img src="images/icon-arrow-up-dark.svg" /></button
+              ></a>
+              <!-- Dropdown list items of Connect -->
+              <ul class="connect hide" id="connect">
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>LinkedIn</li>
+              </ul>
+            </li>
+            <li class="mobile_sidebar_hr"><a></a></li>
+            <li class="mobile_sidebar_button"><a href="#">Login</a></li>
+            <li class="mobile_sidebar_button">
+              <a href="#">Sign Up</a>
+            </li>
+          </ul>
+          <!-- Desktop Components-->
+          <div class="desktopnav">
+            <div class="desktopbeta">
+              <!-- Logo -->
+              <div class="">
+                <img src="images/logo.svg" />
+              </div>
+              <div class="deskdiv2" id="hideOnMobile">
+                <ul class="desklistitems">
+                  <li>
+                    <a
+                      >Products<span class="desklistitems_span"
+                        ><img src="images/icon-arrow-light.svg" /></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      >Company<span class="desklistitems_span"
+                        ><img src="images/icon-arrow-light.svg" /></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="desklistitems2"
+                      >Connect<button
+                        class="desklistitems_button"
+                        id="downdesk"
+                        onclick="showConnectDesk()"
+                      >
+                        <img src="images/icon-arrow-light.svg" />
+                      </button>
+                      <button
+                        class="desklistitems_button hide"
+                        id="updesk"
+                        onclick="showConnectDesk()"
+                      >
+                        <img src="images/icon-arrow-light-up.svg" />
+                      </button>
+                    </a>
+                    <ul class="connect_desk hide" id="connect_desk">
+                      <li>Contact</li>
+                      <li>Newsletter</li>
+                      <li>LinkedIn</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="deskdiv3" id="hideOnMobile">
+              <button class="deskdiv3_button">Login</button>
+              <button class="deskdiv3_button">Sign Up</button>
+            </div>
+            <!-- Hamburger menu icon -->
+            <div
+              class="hideOnDesktop hamburger"
+              onclick="showMobileNav()"
+              id="hamburger"
+            >
+              <img src="images/icon-hamburger.svg" />
+            </div>
+            <!-- Close menu icon -->
+            <div class="hide" onclick="showMobileNav()" id="x">
+              <img src="images/icon-close.svg" />
+            </div>
+          </div>
+          <div class="modern_container">
+            <div class="modern_div">
+              <h2 class="modern_h2">
+                <span class="modern_h2_span">A modern </span>
+                <span class="modern_h2_span">publishing platform</span>
+              </h2>
+              <p class="modern_p">
+                Grow your audience and build your online brand
+              </p>
+            </div>
+            <div class="start_container">
+              <button class="Start_button first">
+                <a href="#">Start for Free</a>
+              </button>
+              <button class="Start_button second">
+                <a href="#">Learn More</a>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Section Components-->
+    <section>
+      <!-- Section 1 -->
+      <div class="section1_container">
+        <div class="section1_structure">
+          <h3 class="h3_style sec_extra align">Designed for the future</h3>
+          <div class="section1_content">
+            <div class="item_1">
+              <img
+                class="camerapic_div"
+                id="hideOnDesktop"
+                src="images/illustration-editor-mobile.svg"
+              />
+              <img
+                class="item_1_img"
+                id="hideOnMobile"
+                src="images/illustration-editor-desktop.svg"
+              />
+            </div>
+            <div class="item_2">
+              <div>
+                <h3 class="h3_style sec_extra margin_heading">
+                  Introducing an <span>extensible editor</span>
+                </h3>
+                <p class="p_style">
+                  Blogr features an exceedingly intuitive interface which lets
+                  you focus on one thing: creating content. The editor supports
+                  management of multiple blogs and allows easy manipulation of
+                  embeds such as images, videos, and Markdown. Extensibility
+                  with plugins and themes provide easy ways to add functionality
+                  or change the looks of a blog.
+                </p>
+              </div>
+              <div>
+                <h3 class="h3_style sec_extra margin_heading">
+                  Robust content <span>management</span>
+                </h3>
+                <p class="p_style">
+                  Flexible content management enables users to easily move
+                  through posts. Increase the usability of your blog by adding
+                  customized categories, sections, format, or flow. With this
+                  functionality, you're in full control.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Section 2 -->
+      <div class="phoneillust_container">
+        <div class="phoneillust_div">
+          <div>
+            <img class="phone_image" src="images/illustration-phones.svg" />
+          </div>
+          <div class="state_div">
+            <h3 class="h3_style sec_extra center">
+              State of the Art <span>Infrastructure</span>
+            </h3>
+            <p class="p_style">
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Section 3 -->
+      <div class="section3_container">
+        <div class="section3_div">
+          <div class="laptop_container">
+            <img
+              class="laptop_div"
+              id="hideOnDesktop"
+              src="images/illustration-laptop-mobile.svg"
+            />
+            <img
+              class="laptop_div add_img"
+              id="hideOnMobile"
+              src="images/illustration-laptop-desktop.svg"
+            />
+          </div>
+          <div class="section3_content">
+            <div>
+              <h3 class="h3_style sec_extra margin_heading">
+                Free, open, simple
+              </h3>
+              <p class="p_style">
+                Blogr is a free and open source application backed by a large
+                community of helpful developers. It supports features such as
+                code syntax highlighting. RSS feeds, social media integration,
+                third-party commenting tools, and works seamlessly with Google
+                Analytics. the architecture is clean and is relatively easy to
+                learn.
+              </p>
+            </div>
+            <div class="section3_child2">
+              <h3 class="h3_style sec_extra margin_heading">
+                Powerful tooling
+              </h3>
+              <p class="p_style">
+                Batteries included. We bulit a simple and staightforward CLI
+                tool that makes customization and deployment a breeze, but
+                capable of producing even the most complicated sites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="footer_container">
+        <div class="footer_div">
+          <div class="footer_logo">
+            <img class="logo_size" src="images/logo.svg" />
+          </div>
+          <nav class="footer_nav">
+            <p class="footer_para">Products</p>
+            <ul class="footer_ul">
+              <li><a>Overview</a></li>
+              <li><a>Pricing</a></li>
+              <li><a>Marketplace</a></li>
+              <li><a>Features</a></li>
+              <li><a>Integrations</a></li>
+            </ul>
+          </nav>
+          <nav class="footer_nav">
+            <p class="footer_para">Company</p>
+            <ul class="footer_ul">
+              <li><a>About</a></li>
+              <li><a>Team</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Careers</a></li>
+            </ul>
+          </nav>
+          <nav class="footer_nav">
+            <p class="footer_para">Connect</p>
+            <ul class="footer_ul">
+              <li><a>Contact</a></li>
+              <li><a>Newsletter</a></li>
+              <li><a>Linkedin</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

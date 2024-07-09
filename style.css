@@ -1,0 +1,610 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: whitesmoke;
+  font-family: ubuntu;
+}
+#hideOnMobile {
+  display: none;
+}
+.hideOnMobile {
+  display: none;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+/* Header */
+.header_flex_container {
+  display: flex;
+  justify-content: center;
+  background: url("images/bg-pattern-intro-mobile.svg") hsl(355, 100%, 74%);
+  background-size: 500% 500%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid hsl(355, 100%, 74%);
+  border-bottom-left-radius: 100px;
+  width: 100%;
+}
+.header_structure {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 20px 0px 30px 0px;
+}
+/* Mobile Styling */
+.mobile_sidebar {
+  list-style-type: none;
+  /* display: none; */
+  color: black;
+  z-index: 1000;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(117, 11, 11, 0.719);
+  position: absolute;
+  top: 40px;
+  left: 28px;
+  width: 85vw;
+  padding: 40px 0px;
+  margin: 60px 0px 0px 0px;
+  border-radius: 8px;
+}
+.mobile_sidebar li a {
+  display: flex;
+  color: black;
+  text-decoration: none;
+  justify-content: center;
+  font-size: 18px;
+  margin: 25px 0px 0px 0px;
+}
+.mobile_sidebar_span {
+  margin: 0px 0px 0px 10px;
+}
+.mobile_sidebar_hr {
+  width: 65vw;
+  border-bottom: 1px solid rgb(221, 215, 215);
+  margin-left: 40px;
+}
+.mobile_sidebar_button {
+  color: white;
+}
+.mobile_sidebar_button a:hover {
+  border-radius: 26px;
+  text-align: center;
+  background-color: hsl(355, 100%, 74%);
+  padding: 15px 0px;
+  cursor: pointer;
+  color: white;
+  width: 40vw;
+  margin: 20px auto;
+  font-family: overpass;
+}
+/*Dropdown list items of Connect*/
+.connect {
+  padding: 10px 0px 20px 0px;
+  width: 70vw;
+  margin: 20px 0px 10px 34px;
+  background-color: rgba(230, 233, 235, 0.904);
+}
+.connect li {
+  margin-top: 20px;
+  text-align: center;
+  list-style-type: none;
+}
+.connect li:hover {
+  font-weight: 600;
+}
+.connect_container button {
+  background: none;
+  outline: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+/* Desktop styling */
+.desktopnav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+}
+.desktopbeta {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 40vw;
+}
+.deskdiv2 {
+  display: flex;
+  align-content: center;
+}
+.desklistitems {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  width: 25vw;
+  cursor: pointer;
+}
+.desklistitems li a:hover {
+  text-decoration: underline;
+}
+.desklistitems_span {
+  margin: 0px 0px 0px 10px;
+}
+.desklistitems2 {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.desklistitems_button {
+  margin: 0px 0px 0px 10px;
+  background: none;
+  outline: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+.deskdiv3 {
+  display: flex;
+  width: 20vw;
+  align-content: center;
+  justify-content: space-between;
+}
+.deskdiv3_button {
+  background: none;
+  outline: none;
+  width: 9vw;
+  font: inherit;
+  font-family: ubuntu;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+.deskdiv3_button:hover {
+  cursor: pointer;
+  border: 1px solid hsl(355, 100%, 74%);
+  border-radius: 20px;
+  background-color: hsl(355, 100%, 74%);
+  color: white;
+  font-weight: 600;
+  font-family: ubuntu;
+  padding: 10px 0px;
+}
+.modern_container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  font-family: ubuntu;
+}
+.modern_div {
+  display: flex;
+  flex-flow: column nowrap;
+  /* justify-content: center; */
+  text-align: center;
+  align-items: center;
+}
+.modern_h2 {
+  font-family: overpass;
+  font-size: 32px;
+  color: white;
+  margin: 120px 0px 0px 0px;
+}
+.modern_h2_span {
+  display: block;
+  width: 100%;
+  font-weight: 500;
+}
+.modern_p {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  width: 70vw;
+}
+.start_container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 50px 0px 90px 0px;
+  gap: 20px;
+}
+.Start_button {
+  display: flex;
+  border: 1px solid whitesmoke;
+  border-radius: 25px;
+  padding: 12px 13px;
+  cursor: pointer;
+}
+.Start_button a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+.first {
+  background-color: white;
+}
+.first a {
+  color: hsl(355, 100%, 74%);
+}
+.first:hover {
+  background-color: hsl(355, 100%, 74%);
+}
+.first:hover a {
+  color: white;
+}
+.second {
+  background-color: hsl(355, 100%, 74%);
+}
+.second a {
+  color: white;
+}
+.second:hover {
+  background-color: white;
+}
+.second:hover a {
+  color: hsl(355, 100%, 74%);
+}
+@media screen and (min-width: 768px) {
+  #hideOnMobile {
+    display: block;
+  }
+  #hideOnDesktop {
+    display: none;
+  }
+  .hideOnDesktop {
+    display: none;
+  }
+  .connect_desk {
+    padding: 10px 0px 20px 0px;
+    width: 13vw;
+    position: absolute;
+    top: 70px;
+    left: 480px;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+  }
+  .connect_desk li {
+    margin-top: 20px;
+    text-align: center;
+    list-style-type: none;
+    color: inherit;
+  }
+  .connect_desk li:hover {
+    font-weight: 600;
+  }
+
+  .connect_desk button {
+    background: none;
+    outline: none;
+    outline: none;
+    cursor: pointer;
+    border: none;
+  }
+  .modern_h2 {
+    display: inline;
+    font-size: 50px;
+  }
+  .modern_h2_span {
+    display: inline;
+    font-size: 54px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 460px) {
+  .modern_h2_span {
+    display: inline;
+  }
+}
+/* Section Styling */
+/* Section 1 */
+.section1_container {
+  display: flex;
+  justify-content: center;
+}
+.section1_structure {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 90px 0px 250px 0px;
+  gap: 30px;
+  width: 90%;
+  padding-top: 10px;
+}
+.h3_style {
+  font-size: 31px;
+  font-family: overpass;
+  font-weight: 500;
+  text-align: center;
+  padding: 0px 0px 20px 0px;
+}
+.h3_style span {
+  display: block;
+}
+.margin_heading {
+  margin: 40px 0px 0px 0px;
+}
+.camerapic_div {
+  width: 100%;
+  height: fit-content;
+  object-fit: fill;
+}
+.p_style {
+  font-size: 18px;
+  font-family: overpass;
+  font-weight: 300;
+  text-align: center;
+  /* padding: 0px 0px 20px 0px; */
+}
+/* Section 2 */
+.phoneillust_container {
+  display: flex;
+  justify-content: center;
+  background: url("images/bg-pattern-circles.svg") hsl(237, 23%, 32%);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  color: white;
+}
+.phoneillust_div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 90%;
+  margin: 0px 0px 80px 0px;
+  position: relative;
+}
+.phone_image {
+  max-width: 100%;
+  object-fit: cover;
+  margin: -180px 0px 0px 0px;
+}
+/* Section 3 */
+.section3_container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+.section3_div {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 90%;
+  gap: 20px;
+}
+.laptop_container {
+  display: flex;
+  justify-content: center;
+}
+.laptop_div {
+  max-width: 100%;
+  height: fit-content;
+  object-fit: cover;
+}
+/* Footer */
+.footer_container {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(258, 17%, 15%);
+  border-top-right-radius: 100px;
+}
+.footer_div {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  width: 90%;
+  margin: 50px 0px;
+}
+.footer_logo {
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 30px 0px;
+}
+.footer_para {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 30px 0px 20px 0px;
+}
+.footer_nav ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  color: rgb(196, 193, 193);
+}
+.footer_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer_ul li a:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  .h3_style {
+    text-align: left;
+    font-size: 26px;
+  }
+  .h3_style span {
+    display: inline;
+  }
+  .align {
+    text-align: center;
+    font-size: 32px;
+  }
+  .center {
+    text-align: center;
+  }
+  .sec_extra {
+    font-weight: 500;
+  }
+  .p_style {
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: left;
+    font-weight: 400;
+  }
+  .margin_heading {
+    margin: 0;
+  }
+  .section1_structure {
+    width: 100%;
+    overflow: hidden;
+  }
+  .section1_content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 240px;
+  }
+  .item_1 {
+    order: 2;
+    width: 73vw;
+    position: relative;
+    height: fit-content;
+    object-fit: cover;
+  }
+  .item_1_img {
+    width: 110%;
+    position: absolute;
+    right: -250px;
+    top: -100px;
+    /* height: fit-content;
+    object-fit: cover; */
+    clip-path: inset(0 230px 0 0);
+  }
+  .item_2 {
+    order: 1;
+    width: 43vw;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 126px 0px 0px 100px;
+    gap: 60px;
+  }
+  /* Section 2 */
+  .phoneillust_container {
+    display: flex;
+    justify-content: center;
+    background: url("images/bg-pattern-circles.svg") hsl(237, 23%, 32%);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+    color: white;
+  }
+  .phoneillust_div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 90%;
+    margin: -180px 0px 80px 0px;
+    position: relative;
+  }
+  .phone_image {
+    max-width: 100%;
+    object-fit: cover;
+    margin: -180px 0px 0px 0px;
+  }
+  /* Section 3 */
+  .section3_container {
+    margin: 100px 0px 70px 0px;
+  }
+  .section3_div {
+    width: 100vw;
+    height: 121.5vh;
+    flex-flow: row nowrap;
+    position: relative;
+  }
+  .laptop_div {
+    max-width: 67%;
+    height: fit-content;
+    object-fit: cover;
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    left: -252px;
+  }
+  .laptop_container {
+    width: 50vw;
+  }
+  .add_img {
+    width: 90%;
+    height: fit-content;
+    clip-path: inset(0 0 0 260px);
+  }
+  .section3_content {
+    width: 34vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: -25px 0px 0px 0px;
+  }
+  .section3_child2 {
+    margin: 50px 0px 0px 0px;
+  }
+  /* Footer */
+  .footer_div {
+    flex-flow: row nowrap;
+    width: 65vw;
+    justify-content: space-between;
+  }
+  .logo_size {
+    width: 7vw;
+    height: fit-content;
+  }
+  .footer_logo {
+    margin: 20px 0px 0px 0px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .section1_content {
+    height: 119.5vh;
+  }
+  .item_2 {
+    order: 1;
+    width: 43vw;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 126px 0px 0px 100px;
+    gap: 60px;
+  }
+  .phoneillust_container {
+    background-size: 55% 200%;
+    background-position: bottom left;
+    height: 55vh;
+    margin-top: -420px;
+  }
+  .phoneillust_div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 80vw;
+    gap: 50px;
+  }
+  .phone_image {
+    max-width: 100%;
+    height: 83vh;
+    object-fit: cover;
+    margin: 0px 0px -300px 0px;
+  }
+  .state_div {
+    width: 35vw;
+    margin: 250px 0px 0px 0px;
+  }
+  .center {
+    text-align: left;
+  }
+}
